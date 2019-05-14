@@ -9,8 +9,11 @@ const routes: Routes = [
     {
         path: '',
         component: LayoutComponent,
-        children: [
-         {path:'home', loadChildren:'./home/home.module#HomeModule'}
+        children: 
+        [
+            {path:'', redirectTo:'home', pathMatch:'prefix'},
+            {path:'**', redirectTo:'home', pathMatch:'prefix'},
+            {path:'home', loadChildren:'./home/home.module#HomeModule'}
         ]
     }
 ];
