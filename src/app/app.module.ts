@@ -9,14 +9,15 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { LayoutComponent } from './layout/layout.component';
+import { GracenavbarComponent } from './shared/gracenavbar/gracenavbar.component';
 
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        GracenavbarComponent
     ],
     imports: [
         BrowserAnimationsModule,
