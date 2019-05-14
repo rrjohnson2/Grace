@@ -9,7 +9,6 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { GracenavbarComponent } from './shared/gracenavbar/gracenavbar.component';
 
 
 
@@ -17,7 +16,6 @@ import { GracenavbarComponent } from './shared/gracenavbar/gracenavbar.component
     declarations: [
         AppComponent,
         NavbarComponent,
-        GracenavbarComponent
     ],
     imports: [
         BrowserAnimationsModule,
