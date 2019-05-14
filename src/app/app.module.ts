@@ -9,6 +9,9 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { LayoutComponent } from './layout/layout.component';
+
+
 
 @NgModule({
     declarations: [
