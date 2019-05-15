@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer, OnDestroy } from '@angular/core';
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
+import * as Rellax from 'rellax';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor()
+  {
 
-  ngOnInit() {
+  }
+  ngOnInit()
+  {
+    
   }
 
 }

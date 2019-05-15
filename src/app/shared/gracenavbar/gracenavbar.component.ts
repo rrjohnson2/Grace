@@ -20,10 +20,10 @@ export class GracenavbarComponent implements OnInit {
         this.toggleButton = navbar.getElementsByClassName('navbar-toggler')[0];
     }
     sidebarOpen() {
-        const toggleButton = this.toggleButton;
+       // const toggleButton = this.toggleButton;
         const html = document.getElementsByTagName('html')[0];
         setTimeout(function(){
-            toggleButton.classList.add('toggled');
+          //  toggleButton.classList.add('toggled');
         }, 500);
         html.classList.add('nav-open');
 
@@ -32,7 +32,7 @@ export class GracenavbarComponent implements OnInit {
     sidebarClose() {
         const html = document.getElementsByTagName('html')[0];
         // console.log(html);
-        this.toggleButton.classList.remove('toggled');
+        //this.toggleButton.classList.remove('toggled');
         this.sidebarVisible = false;
         html.classList.remove('nav-open');
     };
