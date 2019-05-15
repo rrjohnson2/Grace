@@ -28,7 +28,6 @@ export class LayoutComponent implements OnInit {
                 const number = window.scrollY;
                 var _location = this.location.path();
                 _location = _location.split('/')[2];
-                console.log(window.scrollY);
                 if (number > 150 || window.pageYOffset > 150) {
                     navbar.classList.remove('navbar-transparent');
                 } else if (_location !== 'login' && this.location.path() !== '/nucleoicons') {

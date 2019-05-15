@@ -14,6 +14,11 @@ import { GracenavbarComponent } from './shared/gracenavbar/gracenavbar.component
 })
 export class AppComponent implements OnInit {
     
+    ngOnInit()
+    {
+        
+    }
+    
     // private _router: Subscription;
     // @ViewChild(NavbarComponent) navbar: NavbarComponent;
 
