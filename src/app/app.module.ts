@@ -11,13 +11,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CoverPhotoComponent } from './layout/home/cover-photo/cover-photo.component';
 import { MeetGraceComponent } from './layout/home/meet-grace/meet-grace.component';
+import { GraceServicesComponent } from './layout/home/grace-services/grace-services.component';
 
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
     ],
     imports: [
         BrowserAnimationsModule,
