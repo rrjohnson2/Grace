@@ -8,19 +8,16 @@
             <span class="button-bar"></span>
         </a>
          <div ngbDropdownMenu>
-           <a class="dropdown-header">Dropdown header</a>
-           <a class="dropdown-item" href="#">Action</a>
-           <a class="dropdown-item" href="#">Another action</a>
-           <a class="dropdown-item" href="#">Something else here</a>
+           <a class="dropdown-header">Navigation</a>
            <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="#">Separated link</a>
+           <a class="dropdown-item" [routerLink]="['/layout/store']">Store</a>
            <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="#">One more separated link</a>
+           <a class="dropdown-item" [routerLink]="['/layout/portal']">Client Portal</a>
          </div>
        </div>
     </div>
       <div class="navbar-translate">
-          <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Home">
+          <a class="navbar-brand" [routerLink]="['/home']" placement="bottom" ngbTooltip="Home">
               Graceful Beginings Raleigh
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -38,13 +35,13 @@
                 </a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/grace.safrit" target="_blank">
+                <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/Graceful-Beginnings-Doula-and-Lactation-Educator-2170529909700235/" target="_blank">
                   <i class="fab fa-facebook-square"></i>
                   <p class="d-lg-none d-xl-none">Facebook</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.facebook.com/grace.safrit" target="_blank">
+                <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/gracefulbeginningsraleigh/?utm_source=ig_profile_share&igshid=1t8ti4vur9am1&fbclid=IwAR2cyZZJWuQJQ6L9pXPRBVXNi_teLWczaf_yG7vJVCV7yKcXMmULueSndEI" target="_blank">
                   <i class="fab fa-instagram"></i>
                   <p class="d-lg-none d-xl-none">Instagram</p>
                 </a>
