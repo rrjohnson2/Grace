@@ -13,11 +13,12 @@ import { GracenavbarComponent } from './shared/gracenavbar/gracenavbar.component
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    ngOnInit(){
+    ngOnInit()
+    {
         
     }
     // private _router: Subscription;
-    // @ViewChild(GracenavbarComponent) navbar: GracenavbarComponent;
+    // @ViewChild(NavbarComponent) navbar: NavbarComponent;
 
     // constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
     // ngOnInit() {
