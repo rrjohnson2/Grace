@@ -6,12 +6,16 @@ import { GracenavbarComponent } from '../shared/gracenavbar/gracenavbar.componen
 import { NavbarComponent } from 'app/shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from 'app/shared/footer/footer.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
     declarations: [
         LayoutComponent,
         GracenavbarComponent,
+        FooterComponent,
+        FaqComponent
 
     ],
     imports: [

@@ -12,6 +12,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CoverPhotoComponent } from './layout/home/cover-photo/cover-photo.component';
 import { MeetGraceComponent } from './layout/home/meet-grace/meet-grace.component';
 import { GraceServicesComponent } from './layout/home/grace-services/grace-services.component';
+import { FooterComponent } from './shared/footer/footer.component';
+
+
 
 
 

@@ -22,20 +22,30 @@ export class LayoutComponent implements OnInit {
 
         
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
-        this.navbar.sidebarClose()
+        this.navbar.sidebarClose();
+
         
-            this.renderer.listenGlobal('window', 'scroll', (event) => {
-                const number = window.scrollY;
-                var _location = this.location.path();
-                _location = _location.split('/')[2];
-                if (number > 150 || window.pageYOffset > 150) {
-                    navbar.classList.remove('navbar-transparent');
-                } else if (_location !== 'login' && this.location.path() !== '/nucleoicons') {
-                    // remove logic
-                    navbar.classList.add('navbar-transparent');
-                }
-            });
+
+        this.renderer.listenGlobal('window', 'scroll', (event) => {
+            
+            const number = window.scrollY;
+            var _location = this.location.path();
+            var transparent= _location==='/layout/faq'
+            //_location = _location.split('/')[2];
+            console.log(_location)
+            if (number > 150 || window.pageYOffset > 150 ) {
+                navbar.classList.remove('navbar-transparent');
+            } else if (!transparent) {
+                // remove logic
+                navbar.classList.add('navbar-transparent');
+            }
+        });
+        
+        
+    
+            
         
     }
 
 }
+//_location !== 'login' && this.location.path() !== '/nucleoicons'
