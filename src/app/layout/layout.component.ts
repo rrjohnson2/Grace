@@ -23,7 +23,6 @@ export class LayoutComponent implements OnInit {
         
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
         this.navbar.sidebarClose();
-
         
 
         this.renderer.listenGlobal('window', 'scroll', (event) => {
