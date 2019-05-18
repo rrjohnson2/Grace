@@ -17,6 +17,7 @@ import { ContactComponent } from './layout/contact/contact.component';
 import { GraceModalLargeComponent } from './shared/grace-modal-large/grace-modal-large.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GlobalService } from './services/global.service';
+import { GraceNotificationComponent } from './shared/grace-notification/grace-notification.component';
 
 
 

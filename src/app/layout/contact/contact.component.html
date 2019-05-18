@@ -1,38 +1,32 @@
 <div class="container ">
         <div class="content row justify-content-center ">
           <div class="content-title text-center ">
-            <h1 class="stand-alone">Contact</h1>
+            <h1 class="stand-alone">Contact Me</h1>
             <h3>Email: <a>gracefulbeginingsraleigh@yahoo.com</a></h3>
-            <h3>Phone: <a>(336-618-1285)</a></h3>
+            <h3>Phone: <a>(336-686-5859)</a></h3>
           </div>
-          <form [formGroup]="contactForm" (ngSubmit)=sendMessage() class=" row col-8 justify-content-center form-body" >
-                <div class="col-6">
+          <form [formGroup]="contactForm" (ngSubmit)=sendMessage() class=" row justify-content-center col-8 form-body" >
+                <div class="col-10 form_input ">
                         <div class="form-group ">
-                            <input formControlName="firstname" type="text" placeholder="First Name" class="form-control form-control-success" />
+                            <input formControlName="name" type="text" placeholder="Name" class="form-control form-control-success" />
                         </div>
                 </div>
-                <div class="col-6">
-                        <div class="form-group ">
-                            <input  formControlName="lastname" type="text" placeholder=" Last Name" class="form-control form-control-success" />
-                        </div>
-                </div>
-                <div class="col-6">
+                <div class="col-10 form_input">
                         <div class="form-group ">
                             <input formControlName="email"type="text" placeholder="Email" class="form-control form-control-success" />
                         </div>
                 </div>
-                <div class="col-6">
+                <div class="col-10 form_input">
                         <div class="form-group ">
                             <input formControlName="phonenumber" type="text" placeholder="Phone Number" class="form-control form-control-success" />
                         </div>
                 </div>
-                <div class="col-8">
-                        <div class="form-group green-border-focus">
-                                <label for="exampleFormControlTextarea5">Write Message</label>
-                                <textarea formControlName="message" class="form-control"id="exampleFormControlTextarea5" rows="3"></textarea>
+                <div class="col-10">
+                        <div class="form-group ">
+                                <textarea class="form-control" placeholder="Tell Me What's On Your Mind..." formControlName="message" id="exampleFormControlTextarea5" rows="3"></textarea>
                         </div>
                 </div>
-                <div class="col-12 text-right">
+                <div class="col-12 text-center">
                         <button [disabled]="!contactForm.valid"  placement="top" ngbTooltip="Send Message" 
                                 class="btn btn-primary btn-icon btn-round" type="submit">
                                 <i class="now-ui-icons ui-1_send"></i>

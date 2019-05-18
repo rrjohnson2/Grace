@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-faq',
@@ -26,7 +27,9 @@ export class FaqComponent implements OnInit {
       answer:`Nope! As a doula I work with your partner and birth team. I refer to your doctor regarding all medical matters and refer you to healthcare professionals for additional support, assessment, prescriptions, or diagnosis where needed. I work with your birth partner to support them as well as you. No one can replace a husband in the birthing room! `
     }
   ]
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit() {
   }

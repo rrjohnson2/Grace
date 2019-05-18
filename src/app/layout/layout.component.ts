@@ -16,14 +16,30 @@ export class LayoutComponent implements OnInit {
 
   private _router: Subscription;
     @ViewChild(GracenavbarComponent) navbar: GracenavbarComponent;
+    private _transparent: boolean;
 
-    constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
+    constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {
+        var browserRefresh = !router.navigated && 
+                            (
+                                this.router.url==='/layout/contact' ||
+                                this.router.url==='/layout/faq'
+                            );
+        if(browserRefresh)
+        {
+            this._transparent=false;
+        }
+    }
     ngOnInit() {
 
         
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
         this.navbar.sidebarClose();
         
+        if(!this._transparent)
+        {
+           
+            navbar.classList.remove('navbar-transparent');
+        }
 
         this.renderer.listenGlobal('window', 'scroll', (event) => {
             
