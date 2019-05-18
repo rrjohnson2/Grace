@@ -68,13 +68,11 @@ export class ContactComponent implements OnInit {
   sendMessage(){
 
     this.contructSmsMessage();
-    console.log(this.sms_message)
     var sms =
     {
       message:this.sms_message,
       phone_number:'3366181285'
     }
-    console.log(this.globalservice)
     this.globalservice.send(sms).subscribe(
       data =>{
       this.nfComp.addAlert(this.alerts.pass);

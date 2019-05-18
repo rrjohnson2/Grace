@@ -21,7 +21,6 @@ export class GlobalService {
 
   public send(sms):Observable<any>
   {
-    console.log("made")
     return this.http.post<any>(this.url,sms,this.httpOptions);
   }
 }

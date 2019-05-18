@@ -5,26 +5,14 @@
         <h1>Services</h1>
       </div>
       <div class="slide row justify-content-center">
-        <div [ngStyle]="{'background-image': 'url(' + service.image + ')', 'background-size': 'cover'  }"
-          class=" slide-container col-8 justify-content-center " >
-          
-              <div class="slide-title title text-center ">
-                <h3>{{service.title}}</h3>
-              </div>
-              <div class="slide-message slide-content text-center">
-                <div>{{service.content}}</div>
-                <div class="text-center next-slide">
-                    <button (click)="turn('left')" placement="left" ngbTooltip="Previous Service" 
-                     class="btn btn-primary btn-icon btn-round" type="button">
-                        <i class="now-ui-icons arrows-1_minimal-left"></i>
-                    </button>
-                    <button (click)="turn('right')" placement="right" ngbTooltip="Next Service" 
-                    class="btn btn-primary btn-icon btn-round" type="button">
-                       <i class="now-ui-icons arrows-1_minimal-right"></i>
-                   </button>
-                </div>
-              </div>
-        
+        <ngb-carousel #carousel (slide)="updateContent($event)" class=" col-sm-8 col-md-8 col-lg-6">
+          <ng-template  [id]="service.id" class="service-slide" *ngFor="let service of services" ngbSlide>
+            <img class="d-block carousel-image" [src]="service.image" alt="First slide">
+          </ng-template>
+        </ngb-carousel>
+        <div class="card card-content card-serve card-height col-sm-8 col-md-8 col-lg-6 text-center">
+          <div class="card-header">{{tagged.title}}</div>
+          <div class="card-body">{{tagged.content}}</div>
         </div>
       </div>
     </div>

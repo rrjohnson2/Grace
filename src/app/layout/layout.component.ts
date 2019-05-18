@@ -51,7 +51,6 @@ export class LayoutComponent implements OnInit {
                  _location==='/contact' || 
                  _location==='/coming-soon'
             //_location = _location.split('/')[2];
-            console.log(_location)
             if (number > 150 || window.pageYOffset > 150 ) {
                 navbar.classList.remove('navbar-transparent');
             } else if (!transparent) {
