@@ -6,6 +6,9 @@
     margin-top:$section-margin;
 }
 
+.question-header{
+    border-bottom: .25vh solid $primary-color; 
+}
 .questions{
     overflow-y: auto;
     overflow-x: hidden;

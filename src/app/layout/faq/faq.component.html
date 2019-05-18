@@ -5,13 +5,15 @@
       <h1 class="stand-alone">FAQ</h1>
       <h3>Answering Your Questions</h3>
     </div>
-    <div class="content-body row justify-content-center questions" >
-      <div *ngFor="let dialog of qna" class="row justify-content-center">
-        <div class="card col-10 text-center">
-          <div class="card-header">{{dialog.question}}</div>
-          <div class="card-body ">{{dialog.answer}}</div>
+    <div class="content-body row justify-content-center " >
+      <div class="row col-10 questions justify-content-center">
+        <div *ngFor="let dialog of qna" class="row justify-content-center">
+          <div class="card col-11 text-center">
+            <div class="card-header question-header"><h3>Question</h3>{{dialog.question}}</div>
+            <div class="card-body "><h5>Answer</h5>{{dialog.answer}}</div>
+          </div>
         </div>
-      </div>
+    </div>
     </div>
   </div>
 </div>
