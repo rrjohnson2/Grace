@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GlobalService {
 
-  private url ='http://localhost:8080/send';
+  private url ='http://ec2-3-17-4-85.us-east-2.compute.amazonaws.com:8080/send';
   private httpOptions= 
   { 
     headers: new HttpHeaders(

@@ -78,11 +78,12 @@ export class ContactComponent implements OnInit {
     
     this.sms_message=
     `
+    \n
     First: ${this.first}\n
     Last: ${this.last}\n
     Email: ${this.email}\n
     Phone: ${this.phonenumber}\n
-    Message: ${this.message}\n
+    Message: ${this.message}
     `
   }
 
