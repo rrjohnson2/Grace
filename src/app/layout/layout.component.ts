@@ -29,7 +29,7 @@ export class LayoutComponent implements OnInit {
             
             const number = window.scrollY;
             var _location = this.location.path();
-            var transparent= _location==='/layout/faq'
+            var transparent= _location==='/layout/faq' || _location==='/layout/contact'
             //_location = _location.split('/')[2];
             console.log(_location)
             if (number > 150 || window.pageYOffset > 150 ) {

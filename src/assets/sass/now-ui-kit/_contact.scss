@@ -1,0 +1,15 @@
+.form-body{
+    border-style: solid;
+    border-style:solid;
+    border-radius: 1vh;
+    border-color: $primary-color; 
+}
+
+.green-border-focus{
+    border-bottom: 1px solid $black-color;
+}
+
+.green-border-focus .form-control:focus {
+    border: 1px solid $primary-color;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}

@@ -13,6 +13,10 @@ import { CoverPhotoComponent } from './layout/home/cover-photo/cover-photo.compo
 import { MeetGraceComponent } from './layout/home/meet-grace/meet-grace.component';
 import { GraceServicesComponent } from './layout/home/grace-services/grace-services.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ContactComponent } from './layout/contact/contact.component';
+import { GraceModalLargeComponent } from './shared/grace-modal-large/grace-modal-large.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GlobalService } from './services/global.service';
 
 
 
@@ -30,9 +34,10 @@ import { FooterComponent } from './shared/footer/footer.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        HttpClientModule
     ],
-    providers: [],
+    providers: [GlobalService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

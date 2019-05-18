@@ -1,5 +1,6 @@
 import { NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GraceModalLargeComponent } from '../grace-modal-large/grace-modal-large.component';
 
 
 
@@ -10,10 +11,10 @@ import { CommonModule } from '@angular/common';
     CommonModule,
   ],
   declarations: [
-    
+    GraceModalLargeComponent
   ],
   exports: [
-    
+    GraceModalLargeComponent
   ]
 })
 
