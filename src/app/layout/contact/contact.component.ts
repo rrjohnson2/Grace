@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { GlobalService } from 'app/services/global.service';
 import { error } from 'util';
 import { Router, NavigationStart } from '@angular/router';
+import { GraceNotificationComponent } from 'app/shared/grace-notification/grace-notification.component';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,7 @@ import { Router, NavigationStart } from '@angular/router';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  private subscription;
+  @ViewChild(GraceNotificationComponent) nfComp:GraceNotificationComponent
   public contactForm:FormGroup;
   private name;
   private email;
@@ -18,6 +19,23 @@ export class ContactComponent implements OnInit {
   private message; 
 
   private sms_message;
+
+  private alerts={
+    pass:{
+      id: 1,
+      type: 'success',
+      strong: 'Message Delivered',
+      message: 'Grace Will Contact You As Soon As Possible.',
+      icon: 'ui-2_like'
+    },
+    fail:{
+      id: 2,
+      type: 'danger',
+      strong: 'Oh snap!',
+      message: 'Something Went Wrong.',
+      icon: 'objects_support-17'
+    }
+  }
 
   constructor(private globalservice:GlobalService, ) {
   
@@ -58,9 +76,15 @@ export class ContactComponent implements OnInit {
     }
     console.log(this.globalservice)
     this.globalservice.send(sms).subscribe(
-      error =>{
-        console.log(error);
+      data =>{
+      this.nfComp.addAlert(this.alerts.pass);
+      this.contactForm.reset();
+      },
+      error =>
+      {
+        this.nfComp.addAlert(this.alerts.fail);
       }
+      
     );
 
 

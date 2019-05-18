@@ -1,0 +1,1 @@
+export const popUpTime= 5000;

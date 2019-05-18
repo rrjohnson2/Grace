@@ -12,6 +12,7 @@ import { CommonlySharedModule } from 'app/shared/common/commonly.shared.module';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { GraceNotificationComponent } from 'app/shared/grace-notification/grace-notification.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
         GracenavbarComponent,
         FooterComponent,
         FaqComponent,
-        ContactComponent
+        ContactComponent,
+        GraceNotificationComponent
         
 
     ],
