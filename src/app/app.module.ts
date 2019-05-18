@@ -18,6 +18,7 @@ import { GraceModalLargeComponent } from './shared/grace-modal-large/grace-modal
 import { HttpClientModule } from '@angular/common/http';
 import { GlobalService } from './services/global.service';
 import { GraceNotificationComponent } from './shared/grace-notification/grace-notification.component';
+import { ComingSoonComponent } from './layout/coming-soon/coming-soon.component';
 
 
 

@@ -21,8 +21,9 @@ export class LayoutComponent implements OnInit {
     constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {
         var browserRefresh = !router.navigated && 
                             (
-                                this.router.url==='/layout/contact' ||
-                                this.router.url==='/layout/faq'
+                                this.router.url==='/contact' ||
+                                this.router.url==='/faq' ||
+                                this.router.url==='/coming-soon'
                             );
         if(browserRefresh)
         {
@@ -45,7 +46,10 @@ export class LayoutComponent implements OnInit {
             
             const number = window.scrollY;
             var _location = this.location.path();
-            var transparent= _location==='/layout/faq' || _location==='/layout/contact'
+            var transparent=
+                 _location==='/faq' || 
+                 _location==='/contact' || 
+                 _location==='/coming-soon'
             //_location = _location.split('/')[2];
             console.log(_location)
             if (number > 150 || window.pageYOffset > 150 ) {

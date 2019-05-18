@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GraceNotificationComponent } from 'app/shared/grace-notification/grace-notification.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { GraceNotificationComponent } from 'app/shared/grace-notification/grace-
         FooterComponent,
         FaqComponent,
         ContactComponent,
-        GraceNotificationComponent
+        GraceNotificationComponent,
+        ComingSoonComponent
         
 
     ],

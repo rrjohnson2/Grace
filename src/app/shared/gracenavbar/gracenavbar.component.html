@@ -10,16 +10,16 @@
          <div ngbDropdownMenu>
            <a class="dropdown-header">Navigation</a>
            <div class="dropdown-divider"></div>
-           <a class="dropdown-item" [routerLink]="['/layout/home']">Home</a>
+           <a class="dropdown-item" [routerLink]="['/home']">Home</a>
            <div class="dropdown-divider"></div>
-           <a class="dropdown-item" [routerLink]="['/layout/store']">Store</a>
+           <a class="dropdown-item" [routerLink]="['/store']">Store</a>
            <div class="dropdown-divider"></div>
-           <a class="dropdown-item" [routerLink]="['/layout/portal']">Client Portal</a>
+           <a class="dropdown-item" [routerLink]="['/portal']">Client Portal</a>
          </div>
        </div>
     </div>
       <div class="navbar-translate">
-          <a class="navbar-brand" [routerLink]="['/layout/home']"placement="bottom" ngbTooltip="Home">
+          <a class="navbar-brand" [routerLink]="['/home']"placement="bottom" ngbTooltip="Home">
               Graceful Beginnings Raleigh
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -30,12 +30,18 @@
       </div>
       <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
           <ul class="navbar-nav ml-auto">
-              <!-- <li class="nav-item">
-                <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                  <p class="d-lg-none d-xl-none">Twitter</p>
+              <li class="nav-item">
+                <a class="nav-link" rel="tooltip" title="Store" data-placement="bottom" [routerLink]="['/store']" >
+                  <i class=" now-ui-icons  shopping_shop"></i>
+                  <p class="d-lg-none d-xl-none">Store</p>
                 </a>
-              </li> -->
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" rel="tooltip" title="Client Portal" data-placement="bottom" [routerLink]="['/portal']">
+                    <i class="now-ui-icons users_circle-08"></i>
+                    <p class="d-lg-none d-xl-none">Client Portal</p>
+                  </a>
+                </li>
               <li class="nav-item">
                 <a class="nav-link" rel="tooltip" title="Connect with us on Facebook" data-placement="bottom" href="https://www.facebook.com/Graceful-Beginnings-Doula-and-Lactation-Educator-2170529909700235/" target="_blank">
                   <i class="fab fa-facebook-square"></i>
