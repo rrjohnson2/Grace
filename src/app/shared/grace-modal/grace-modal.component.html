@@ -1,0 +1,15 @@
+
+<ng-template class="row" #classic let-c="close" let-d="dismiss">
+    <div class="modal-header justify-content-center">
+        <div class=" text-center">
+            <div>{{title}}</div>
+        </div>
+    </div>
+    <div class="modal-body text-center">
+        <div>{{content}}</div>
+    </div>
+    <div class="modal-footer row justify-content-center">
+            <button type="button" class=" close-text btn btn-link btn-neutral" (click)="c('Close click')">Close</button>
+        </div>
+    
+</ng-template>

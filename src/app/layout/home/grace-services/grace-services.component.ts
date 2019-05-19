@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 import { NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap/carousel/carousel';
+import { GraceModalComponent } from 'app/shared/grace-modal/grace-modal.component';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap/carousel/carousel';
 export class GraceServicesComponent implements OnInit {
 
   @ViewChild("carousel") carousel:NgbCarousel
+  @ViewChild("modal") modal:GraceModalComponent
   public tagged;
   public services=
   [
@@ -31,14 +33,14 @@ export class GraceServicesComponent implements OnInit {
     {
       id:"lact",
       title:"LACTATION SUPPORT",
-      image:`assets/img/lactation.jpg`,
+      image:`assets/img/lactation1.jpg`,
       content:`If you choose to breastfeed it can be beautiful and magical. It can also be dang hard! Breastfeeding is the first challenge you face after giving birth. Having adequate support and encouragement through those critical first weeks is vital to building a successful breastfeeding relationship. I can be apart of that support team. I provide support in person or over the phone. I can be that unbiased educator on your side to help with whatever your feeding goals may be. 
       Trained with CAPPA as lactation educator.`
     },
     {
       id:"birth",
       title:"BIRTHING DOULA",
-      image:`assets/img/pregosup.jpg`,
+      image:`assets/img/birth.jpg`,
       content:`As your birth doula my goal is to work with your partner and birth team to create a peaceful positive experience. I help you to understand any situation, provide unbiased information to help make decisions, and then help you to communicate and advocate for your desires. I do not replace your partner, but rather support you both with continuous physical, emotional, and informational support. 
       Includes:1-2 untimed prenatal visits Unlimited phone and email support Continuous labor support Immediate postpartum support Resource refferals`
     },
@@ -73,7 +75,19 @@ export class GraceServicesComponent implements OnInit {
     this.tagged=active;
   }
 
-  
+  openModal(tagged)
+  {
+    this.modal.populateOpen(tagged.title,tagged.content);
+    this.carousel.pause();
+  }
+
+  resume(event)
+  {
+    if (event) {
+      console.log("hit")
+      this.carousel.cycle();
+    }
+  }
   
   
 }

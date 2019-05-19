@@ -7,6 +7,7 @@ import { MeetGraceComponent } from './meet-grace/meet-grace.component';
 import { GraceServicesComponent } from './grace-services/grace-services.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonlySharedModule } from 'app/shared/common/commonly.shared.module';
+import { GraceModalComponent } from 'app/shared/grace-modal/grace-modal.component';
 
 
 
@@ -16,7 +17,8 @@ import { CommonlySharedModule } from 'app/shared/common/commonly.shared.module';
         HomeComponent,
         CoverPhotoComponent,
         MeetGraceComponent,
-        GraceServicesComponent
+        GraceServicesComponent,
+        GraceModalComponent
     ],
     imports: [
         CommonModule,

@@ -2,19 +2,26 @@
   <div class="section" id="carousel">
     <div class="container content-center">
       <div class="title text-center">
-        <h1>Services</h1>
+        <h3>Services</h3>
       </div>
       <div class="slide row justify-content-center">
-        <ngb-carousel #carousel (slide)="updateContent($event)" class=" col-sm-8 col-md-8 col-lg-6">
-          <ng-template  [id]="service.id" class="service-slide" *ngFor="let service of services" ngbSlide>
-            <img class="d-block carousel-image" [src]="service.image" alt="First slide">
-          </ng-template>
-        </ngb-carousel>
+        
         <div class="card card-content card-serve card-height col-sm-8 col-md-8 col-lg-6 text-center">
-          <div class="card-header">{{tagged.title}}</div>
-          <div class="card-body">{{tagged.content}}</div>
+          <div (click)="openModal(tagged)" class="card-header row justify-content-center">
+              <div class="col-8" >{{tagged.title}}</div>
+              <i class=" col-8 now-ui-icons travel_info"></i>
+          </div>
+          <div class="card-body text-center">
+              <ngb-carousel #carousel (slide)="updateContent($event)" class="">
+                  <ng-template  [id]="service.id" class="service-slide" *ngFor="let service of services" ngbSlide>
+                    <img class="d-block carousel-image" [src]="service.image" alt="First slide">
+                  </ng-template>
+              </ngb-carousel>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<app-grace-modal (resume)="resume($event)" #modal></app-grace-modal>

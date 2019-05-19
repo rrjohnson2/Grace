@@ -71,7 +71,7 @@ export class ContactComponent implements OnInit {
     var sms =
     {
       message:this.sms_message,
-      phone_number:'3366181285'
+      phone_number:'3366865859'
     }
     this.globalservice.send(sms).subscribe(
       data =>{

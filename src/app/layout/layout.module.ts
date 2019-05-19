@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GraceNotificationComponent } from 'app/shared/grace-notification/grace-notification.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { GraceModalComponent } from 'app/shared/grace-modal/grace-modal.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
         FaqComponent,
         ContactComponent,
         GraceNotificationComponent,
-        ComingSoonComponent
+        ComingSoonComponent,
+      
         
 
     ],
