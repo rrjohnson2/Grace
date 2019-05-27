@@ -1,0 +1,16 @@
+<div class="messages-container">
+  <div *ngFor="let mgs of messages | async ">
+    <div class="message-content">
+      
+      <div class="bot-message" *ngIf="mgs.sender==='bot'">
+        <p>Bot: {{mgs.content}}</p>
+      </div>
+
+      <div class="usr-message" *ngIf="mgs.sender==='usr'">
+        <p>User: {{mgs.content}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="messaage-form"></div>

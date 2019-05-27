@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { GraceNotificationComponent } from 'app/shared/grace-notification/grace-notification.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { GraceModalComponent } from 'app/shared/grace-modal/grace-modal.component';
+import { ChatbotModule } from 'app/shared/chatbot/chatbot.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { GraceModalComponent } from 'app/shared/grace-modal/grace-modal.componen
         ContactComponent,
         GraceNotificationComponent,
         ComingSoonComponent,
+        
       
         
 
@@ -37,6 +39,7 @@ import { GraceModalComponent } from 'app/shared/grace-modal/grace-modal.componen
         CommonlySharedModule,
         FormsModule,
         ReactiveFormsModule,
+        ChatbotModule
       
         
     ],

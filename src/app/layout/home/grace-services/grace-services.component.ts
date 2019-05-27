@@ -21,28 +21,66 @@ export class GraceServicesComponent implements OnInit {
       id:"free",
       title:"FREE CONSULTATION",
       image:`assets/img/freecon.jpg`,
-      content:`Let's talk! I want to get to know you as much as you me. We can sit down for a chance to answer any questions you may have before we decide to partner together. If I am not the best fit for your family, I can refer you to others who may better fit your needs. Includes:1 free in person meetup`
+      content:
+      {
+        goal:`
+        My goal is for us to get to know each other and answer any questions . 
+        If I am not the best fit for your family,
+        I can refer you to a doula who may better fit your needs.`,
+        points:[
+          'Includes: 1 free in person meetup.'
+        ]
+      }
     },
     {
       id:"preg",
       title:"PREGNANCY SUPPORT",
       image:`assets/img/pregosup.jpg`,
-      content:`As a pregnancy doula my goal is for you to feel heard, supported, and ready to bring your baby into the world. I am there for phone and in person consultations to help provide unbiased education and resources where needed. Together we can build a birth "plan" and work through any emotions leading up to your labor. 
-      Includes 2 private sessions covering basics and comfort measures Birth plan Unlimited phone and email support `
+      content:
+      {
+        goal:`
+        My goal is for you to feel heard, supported, and ready to bring your baby into the world.
+        Together we will work through any fears or past trauma leading up to your childbirth.
+        We will build a birth “plan” as I provide unbiased evidence-based information where needed.
+        We will learn comfort measures and rebozo techniques`,
+        points:[
+          `2-3 prenatal visits covering the basics and comfort measures.`, 
+          `Help building a birth plan.`,
+          `Unlimited phone and email support throughout pregnancy.`
+        ]
+      }
     },
     {
       id:"lact",
-      title:"LACTATION SUPPORT",
+      title:"FEEDING SUPPORT",
       image:`assets/img/lactation1.jpg`,
-      content:`If you choose to breastfeed it can be beautiful and magical. It can also be dang hard! Breastfeeding is the first challenge you face after giving birth. Having adequate support and encouragement through those critical first weeks is vital to building a successful breastfeeding relationship. I can be apart of that support team. I provide support in person or over the phone. I can be that unbiased educator on your side to help with whatever your feeding goals may be. 
-      Trained with CAPPA as lactation educator.`
+      content:
+      {
+        goal:
+        `My goal is to help guide and support you however you choose to feed your infant.`,
+        points:[
+          `Breastfeeding- Breastfeeding can be magical and dang hard! Having adequate support in those first weeks is vital to building a successful breastfeeding relationship. As a trained CAPPA lactation educator, I can provide evidence-based information about lactation and breastfeeding. From initial breastfeeding through weaning I can provide education and encouragement to reach your goals.`, 
+          `Bottle Feeding/Pumping- Balancing bottles, breast, and pump can be difficult. I can provide the necessary evidence-based information so that you can successfully reach your goals and feed your baby how you feel best.`,
+          `Formula Feeding- I have knowledge on formula-feeding and can provide the evidence-based information necessary to support this decision.`
+        ]
+      }
     },
     {
       id:"birth",
       title:"BIRTHING DOULA",
       image:`assets/img/birth.jpg`,
-      content:`As your birth doula my goal is to work with your partner and birth team to create a peaceful positive experience. I help you to understand any situation, provide unbiased information to help make decisions, and then help you to communicate and advocate for your desires. I do not replace your partner, but rather support you both with continuous physical, emotional, and informational support. 
-      Includes:1-2 untimed prenatal visits Unlimited phone and email support Continuous labor support Immediate postpartum support Resource refferals`
+      content:
+      {
+        goal:`
+        My goal is to work with alongside your birth team to give you a positive experience through by providing the following.`,
+        points:[
+          `Unbiased Evidence Based Information-Interpreting situations and providing information to help you make the best decisions for your family.`, 
+          `Comfort Measures- Working with your partner to keep you as comfortable as possible. No matter the type of birth you choose there are many comfort measures we can employ.`,
+          `Emotional Support- Supporting you through fears and previous birth traumas. Encouraging you to birth the way you want to.`,
+          `Advocacy- Help you to communicate and advocate for your desires. Make sure that you are respected and heard.`,
+          `Includes: 2-3 untimed prenatal visits. Unlimited phone and email support. Continuous labor support. Immediate postpartum support. Resource referrals`
+        ]
+      }
     },
   ]
   

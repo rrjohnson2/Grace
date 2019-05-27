@@ -20,7 +20,7 @@ import { GlobalService } from './services/global.service';
 import { GraceNotificationComponent } from './shared/grace-notification/grace-notification.component';
 import { ComingSoonComponent } from './layout/coming-soon/coming-soon.component';
 import { GraceModalComponent } from './shared/grace-modal/grace-modal.component';
-import { LoadingComponent } from './shared/loading/loading.component';
+import { ChatbotComponent } from './shared/chatbot/chatbot.component';
 
 
 

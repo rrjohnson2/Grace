@@ -5,8 +5,13 @@
             <div>{{title}}</div>
         </div>
     </div>
-    <div class="modal-body text-center">
-        <div>{{content}}</div>
+    <div class="modal-body text-left">
+        <div class="content-modal">
+            <div class="modal-goal">{{content.goal}}</div>
+            <ul *ngFor="let point of content.points">
+                <li class="point">{{point}}</li>
+            </ul>
+        </div>
     </div>
     <div class="modal-footer row justify-content-center">
             <button type="button" class=" close-text btn btn-link btn-neutral" (click)="c('Close click')">Close</button>
