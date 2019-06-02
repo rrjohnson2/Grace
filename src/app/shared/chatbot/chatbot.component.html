@@ -1,4 +1,41 @@
-<div class="messages-container">
+<div class="chatbot-container row">
+
+  <div *ngIf="open | async" class="chatbot-content card col-md-6 col-lg-6 col-sm-12">
+      <div class="card-header text-center ">
+        <h5>Chat Bot</h5>
+      </div>
+    <div class="message-content card-body ">
+      <div *ngFor="let mgs of messages | async ">
+          <div class="bot-message" *ngIf="mgs.sender==='bot'">
+            <div class="col-12 text-left">
+              <div class="badge badge-primary message-badge col-6">{{mgs.content}}</div>
+            </div>
+          </div>
+    
+          <div class="usr-message text-right" *ngIf="mgs.sender==='usr'">
+            <div class="badge badge-success message-badge col-6">{{mgs.content}}</div>
+          </div>  
+    </div>
+  </div>
+
+    <div class="col-12 card-footer-custom">
+      <form [formGroup]="sendForm" (ngSubmit)=send()>
+        <input formControlName="message" type="text" placeholder="Ask the bot a question.." class=" col-12 form-control form-control-success" />          
+      </form>
+    </div>
+
+  </div>
+
+  <div class="chatbot-controller col-8 text-right">
+    <button (click)="toogleChatWindow()" class="btn btn-primary btn-lg" type="button">Quick Chat</button>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="messages-container">
   <div *ngFor="let mgs of messages | async ">
     <div class="message-content">
       
@@ -13,4 +50,6 @@
     </div>
   </div>
 </div>
-<div class="messaage-form"></div>
+<div class="messaage-form">
+  <button (click)="send('hey')"></button>
+</div> -->
