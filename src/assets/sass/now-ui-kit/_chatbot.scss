@@ -2,13 +2,14 @@
 .chatbot-controller
 {
     position: fixed;
-    bottom: 0;
+    bottom: $chat-postion;
     right:0;
+    padding-right: 0 !important;
 }
 .chatbot-content
 {
     position: fixed !important;
-    bottom:10vh;
+    bottom:$chat-postion+5vh;
     right:0;
     border: .5vh solid $primary-color;
     z-index: 10000;
