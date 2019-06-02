@@ -1,6 +1,4 @@
-.chatbot-container{
-    z-index: 10000;
-}
+
 .chatbot-controller
 {
     position: fixed;
@@ -10,9 +8,10 @@
 .chatbot-content
 {
     position: fixed !important;
-    bottom:5vh;
+    bottom:10vh;
     right:0;
     border: .5vh solid $primary-color;
+    z-index: 10000;
 
     
 }
@@ -24,7 +23,8 @@
 
 .message-badge{
     
-    white-space: pre-line !important;
+    white-space: pre-line !important; 
+    margin-bottom: 5vh  !important;
 }
 .card-footer-custom{
     padding-bottom: 2vh;

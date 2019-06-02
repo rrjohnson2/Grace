@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChatbotService, Message } from './chatbot.service';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-chatbot',
@@ -39,6 +40,9 @@ export class ChatbotComponent implements OnInit {
     this.sendForm.reset();
   }
 
+ 
+
+
   setOpen()
   {
     this.openSubject.next(this.openBoolean);
@@ -50,4 +54,12 @@ export class ChatbotComponent implements OnInit {
     this.setOpen();
   }
 
+    scrollToBottom(el:HTMLElement)
+    {
+    console.log(el.scrollTop);
+    console.log(el.scrollHeight);
+    el.scrollTop=el.scrollHeight;
+    console.log(el.scrollTop);
+    console.log(el.scrollHeight);
+    }
 }
