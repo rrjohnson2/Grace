@@ -12,7 +12,7 @@
     bottom:$chat-postion+5vh;
     right:0;
     border: .5vh solid $primary-color;
-    z-index: 10000;
+    z-index: 10;
 
     
 }
@@ -29,4 +29,7 @@
 }
 .card-footer-custom{
     padding-bottom: 2vh;
+}
+.unused{
+    color: $white-color;
 }

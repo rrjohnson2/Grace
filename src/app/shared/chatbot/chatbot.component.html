@@ -7,13 +7,20 @@
     <div #content class="message-content card-body ">
       <div *ngFor="let mgs of messages | async ">
           <div class="bot-message" *ngIf="mgs.sender==='bot'">
-            <div class="col-12 text-left">
-              <div class="badge badge-primary message-badge col-6">{{mgs.content}}</div>
+            <div class="col-8 text-left">
+                <div class="badge badge-primary message-badge">
+                    {{mgs.content}}
+                </div>
             </div>
           </div>
     
-          <div class="usr-message text-right" *ngIf="mgs.sender==='usr'">
-            <div class="badge badge-success message-badge col-6">{{mgs.content}}</div>
+          <div class=" row justify-content-right  usr-message text-right" *ngIf="mgs.sender==='usr'">
+            <div class="col-4 unused">unusedtext</div>
+            <div class="col-8">
+              <div class="badge badge-success message-badge">
+                  {{mgs.content}}
+              </div>
+            </div>
           </div>
     </div>
   </div>
