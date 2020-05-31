@@ -1,0 +1,35 @@
+
+.chatbot-controller
+{
+    position: fixed;
+    bottom: $chat-postion;
+    right:0;
+    padding-right: 0 !important;
+}
+.chatbot-content
+{
+    position: fixed !important;
+    bottom:$chat-postion+5vh;
+    right:0;
+    border: .5vh solid $primary-color;
+    z-index: 10;
+
+    
+}
+.message-content{
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    height: 40vh;
+}
+
+.message-badge{
+    
+    white-space: pre-line !important; 
+    margin-bottom: 5vh  !important;
+}
+.card-footer-custom{
+    padding-bottom: 2vh;
+}
+.unused{
+    color: $white-color;
+}

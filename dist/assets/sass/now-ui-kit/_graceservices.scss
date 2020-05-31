@@ -1,0 +1,45 @@
+
+.slide-container
+{
+    color:$white-color;
+    height: 400px;
+    padding: 0;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.slide-content
+{
+    
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.carousel-image{
+    
+
+}
+
+.service-title{
+    font-weight: bolder;
+    color: black;
+}
+.col-sm-8{
+    
+        // max-height: 225px !important;
+        // padding-bottom: 0;
+    
+}
+.card-serve{
+        padding-top:0; 
+        border: .25vh solid $primary-color;
+        margin-bottom:0 !important; 
+        overflow-y: auto !important;
+    }
+.close-text{
+    color: $primary-color !important;
+}
+
+

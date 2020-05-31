@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app: 
+    image: gracedoulafe
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    tty: true
